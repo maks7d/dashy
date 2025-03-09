@@ -1,0 +1,42 @@
+{
+  "updated": "2025-03-09 22:54:57",
+  "clients": [
+    {
+      "common_name": "pc-ubuntu-max",
+      "real_address": "91.170.192.164:34810",
+      "bytes_received": "135839120",
+      "bytes_sent": "948052882",
+      "connected_since": "2025-03-09 20:38:10",
+      "virtual_addresses": [
+        {
+          "address": "10.8.0.24",
+          "last_ref": "2025-03-09 22:54:56"
+        },
+        {
+          "address": "fd42:42:42:42::18",
+          "last_ref": "2025-03-09 22:54:52"
+        }
+      ]
+    },
+    {
+      "common_name": "max-server",
+      "real_address": "2a01:e0a:2b0:2920::cfde:3781",
+      "bytes_received": "27412448",
+      "bytes_sent": "17613447",
+      "connected_since": "2025-03-09 14:06:42",
+      "virtual_addresses": [
+        {
+          "address": "10.8.0.7",
+          "last_ref": "2025-03-09 22:54:56"
+        },
+        {
+          "address": "fd42:42:42:42::7",
+          "last_ref": "2025-03-09 14:06:42"
+        }
+      ]
+    }
+  ],
+  "global_stats": {
+    "Max bcast/mcast queue length": "0"
+  }
+}

@@ -1,47 +1,125 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Site5.0
+  description: Hugo / Max network
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
+    - title: GitHub Hugo
+      path: https://github.com/hugoMiCode
+    - title: Github Maxime
+      path: https://github.com/maks7d
+  logo: https://cdn-icons-png.flaticon.com/128/3715/3715437.png
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: lissy
+  layout: auto
+  iconSize: large
+  customColors:
+    neomorphic:
+      primary: '#fff'
+      background: '#002d75'
+      background-darker: '#12103c'
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: VPN
+    displayData:
+      sortBy: default
+      rows: 2
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Gitlab
+        description: '9000'
+        icon: https://cdn-icons-png.flaticon.com/128/5968/5968853.png
+        url: http://10.8.0.1:9000
+        provider: Hugo server
+        statusCheck: true
+        statusCheckAllowInsecure: true
+        id: 0_244_gitlab
+      - title: Portainer
+        description: '9001'
+        icon: https://cdn.worldvectorlogo.com/logos/portainer.svg
+        url: http://10.8.0.1:9001
+        provider: Hugo server
+        statusCheck: true
+        id: 1_244_portainer
+      - title: Netdata
+        description: '9002'
+        icon: https://www.netdata.cloud/img/netdata.png
+        url: http://10.8.0.1:9002
+        provider: Hugo server
+        statusCheck: true
+        id: 2_244_netdata
+      - title: Nginx
+        description: '9003'
+        icon: >-
+          https://i0.wp.com/www.sismonda.com.ar/wp-content/uploads/2021/04/icon.png?resize=192%2C192
+        url: http://10.8.0.1:9003
+        provider: Hugo server
+        statusCheck: true
+        id: 3_244_nginx
+      - title: CV Maxime
+        description: '9009'
+        icon: https://cdn-icons-png.flaticon.com/128/3135/3135692.png
+        url: http://10.8.0.1:9009
+        provider: Max server
+        statusCheck: true
+        id: 4_244_cvmaxime
+      - title: maps_tracker
+        description: 9010 (in development)
+        icon: https://cdn-icons-png.flaticon.com/128/854/854878.png
+        url: http://10.8.0.1:9010
+        provider: max-server
+        statusCheck: true
+        id: 5_244_mapstracker
+      - title: Budget tracking
+        description: '9012'
+        icon: >-
+          https://cdn6.aptoide.com/imgs/9/0/b/90b661aa4a30c843380ede0800fe37ea_icon.png
+        url: http://10.8.0.1:9012
+        provider: Hugo server
+        statusCheck: true
+        id: 6_244_budgettracking
+      - title: immich
+        description: '9014'
+        icon: >-
+          https://cdn-avatars.huggingface.co/v1/production/uploads/653c54db7bd6a97439db3207/PyTUoIhpBI6tAVPECRPWq.png
+        url: http://10.8.0.1:9014
+        provider: Hugo server
+        statusCheck: true
+        id: 7_244_immich
+      - title: Ollama
+        description: '9004'
+        icon: >-
+          https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/ollama.png
+        url: http://10.8.0.7:9004
+        provider: Max server
+        statusCheck: true
+        id: 8_244_ollama
+    icon: https://cdn-icons-png.flaticon.com/128/6772/6772234.png
+  - name: Public
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: CV Hugo
+        icon: https://cdn-icons-png.flaticon.com/128/3135/3135692.png
+        url: https://hugo-serveur.cloudns.eu/
+        statusCheck: true
+        id: 0_607_cvhugo
+    icon: https://cdn-icons-png.flaticon.com/128/3187/3187451.png
+  - name: Connected users
+    displayData:
+      sortBy: default
+      rows: 2
+      cols: 4
+      collapsed: false
+      hideForGuests: false
+    items: []
+    widgets:
+      - type: embed
+        options:
+          html: >-
+            <iframe src='/clients.html' style='width:100%; height:600px;
+            border:none;'></iframe>
+        id: 0_1509_embed

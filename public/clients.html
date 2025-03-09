@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connected users</title>
+  <!-- Ajout de la feuille de style externe -->
+  <link rel="stylesheet" href="/styles.css"> 
+</head>
+<body>
+  <h2>Clients VPN connectés</h2>
+  <p id="lastUpdated" style="text-align: center; color: #e0e0e0;"></p>
+  <table id="vpnClientsTable">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Adresse réelle</th>
+        <th>Données reçus</th>
+        <th>Données envoyés</th>
+        <th>Connecté depuis</th>
+        <th>Adresses virtuelles</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    fetch('/openvpn_logs.json')
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.getElementById('vpnClientsTable').querySelector('tbody');
+        const lastUpdated = document.getElementById('lastUpdated');
+
+        // Mettre à jour la date de mise à jour
+        lastUpdated.textContent = `Dernière mise à jour : ${new Date(data.updated).toLocaleString()}`;
+
+
+        data.clients.forEach(client => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${client.common_name}</td>
+            <td>${client.real_address}</td>
+            <td>${(client.bytes_received / (1024*1024)).toFixed(2)} MB</td>
+            <td>${(client.bytes_sent / (1024*1024)).toFixed(2)} MB</td>
+            <td>${new Date(client.connected_since).toLocaleString()}</td>
+            <td>${client.virtual_addresses.map(va => va.address).join(', ')}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => console.error('Error while loading users informations :', error));
+  </script>
+</body>
+</html>
