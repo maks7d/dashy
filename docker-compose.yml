@@ -3,7 +3,7 @@ services:
     container_name: Dashy
     build: .
     volumes:
-      - ./user-data/conf.yml:/app/user-data/conf.yml
+      - ./conf.yml:/app/user-data/conf.yml
       - ./public:/app/public
     environment:
       - NODE_ENV=development
