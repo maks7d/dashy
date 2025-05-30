@@ -1,54 +1,71 @@
 {
-  "updated": "2025-04-26 10:19:52",
+  "updated": "2025-05-30 11:14:58",
   "clients": [
     {
-      "common_name": "pc-fixe-max",
-      "real_address": "2a01:e0a:2b0:2920::2e9a:604b",
-      "bytes_received": "78061003",
-      "bytes_sent": "1097966893",
-      "connected_since": "2025-04-26 09:37:59",
+      "common_name": "macminideville",
+      "real_address": "91.170.192.164:34837",
+      "bytes_received": "349919873",
+      "bytes_sent": "773852581",
+      "connected_since": "2025-05-22 07:00:10",
       "virtual_addresses": [
         {
-          "address": "fd42:42:42:42::c",
-          "last_ref": "2025-04-26 10:19:51"
+          "address": "10.8.0.20",
+          "last_ref": "2025-05-30 11:14:57"
         },
         {
-          "address": "10.8.0.12",
-          "last_ref": "2025-04-26 10:19:51"
+          "address": "fd42:42:42:42::14",
+          "last_ref": "2025-05-30 11:14:51"
         }
       ]
     },
     {
-      "common_name": "pc-fixe-alex",
-      "real_address": "2001:861:4286:b000:e796:aff8:6d48:d016",
-      "bytes_received": "21136218",
-      "bytes_sent": "281271864",
-      "connected_since": "2025-04-26 10:09:16",
+      "common_name": "macmax",
+      "real_address": "2a01:e0a:833:1be0:e99a:42e8:a277:a507",
+      "bytes_received": "819554332",
+      "bytes_sent": "356663327",
+      "connected_since": "2025-05-30 08:13:40",
       "virtual_addresses": [
         {
-          "address": "10.8.0.15",
-          "last_ref": "2025-04-26 10:19:51"
+          "address": "10.8.0.8",
+          "last_ref": "2025-05-30 11:14:57"
         },
         {
-          "address": "fd42:42:42:42::f",
-          "last_ref": "2025-04-26 10:19:35"
+          "address": "fd42:42:42:42::8",
+          "last_ref": "2025-05-30 11:14:56"
+        }
+      ]
+    },
+    {
+      "common_name": "hugo-phone",
+      "real_address": "2a02:842b:da:5601:409e:fe84:7fdb:32d5",
+      "bytes_received": "382764",
+      "bytes_sent": "1194638",
+      "connected_since": "2025-05-30 11:14:13",
+      "virtual_addresses": [
+        {
+          "address": "10.8.0.3",
+          "last_ref": "2025-05-30 11:14:53"
+        },
+        {
+          "address": "fd42:42:42:42::3",
+          "last_ref": "2025-05-30 11:14:53"
         }
       ]
     },
     {
       "common_name": "max-server",
-      "real_address": "91.170.192.164:35644",
-      "bytes_received": "159047518",
-      "bytes_sent": "285192590",
-      "connected_since": "2025-04-24 06:39:30",
+      "real_address": "91.170.192.164:48210",
+      "bytes_received": "4898946912",
+      "bytes_sent": "82353756720",
+      "connected_since": "2025-05-18 00:20:30",
       "virtual_addresses": [
         {
           "address": "fd42:42:42:42::7",
-          "last_ref": "2025-04-26 09:50:18"
+          "last_ref": "2025-05-30 07:32:05"
         },
         {
           "address": "10.8.0.7",
-          "last_ref": "2025-04-26 10:19:45"
+          "last_ref": "2025-05-30 11:14:57"
         }
       ]
     }
