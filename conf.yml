@@ -76,31 +76,39 @@ sections:
         provider: Hugo server
         statusCheck: true
         id: 6_244_budgettracking
+        
       - title: immich
         description: '9014'
-        icon: >-
-          https://cdn-avatars.huggingface.co/v1/production/uploads/653c54db7bd6a97439db3207/PyTUoIhpBI6tAVPECRPWq.png
+        icon: https://cdn-avatars.huggingface.co/v1/production/uploads/653c54db7bd6a97439db3207/PyTUoIhpBI6tAVPECRPWq.png
         url: http://10.8.0.1:9014
         provider: Hugo server
         statusCheck: true
         id: 7_244_immich
+
       - title: Ollama
         description: '9004'
-        icon: >-
-          https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/ollama.png
+        icon: https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/light/ollama.png
         url: http://10.8.0.7:9004
         provider: Max server
         statusCheck: true
         id: 8_244_ollama
+
       - title: File converter
         description: '9017'
-        icon: >-
-          https://cdn-icons-png.flaticon.com/128/3685/3685269.png
+        icon: https://cdn-icons-png.flaticon.com/128/3685/3685269.png
         url: http://10.8.0.7:9017
         provider: Max server
         statusCheck: true
         id: 9_244_fileconverter
-    icon: https://cdn-icons-png.flaticon.com/128/6772/6772234.png
+
+      - title: live interface
+        description: '8000'
+        icon: https://cdn-icons-png.flaticon.com/128/13629/13629260.png
+        url: http://10.8.0.7:8000
+        provider: Max server
+        statusCheck: true
+        id: 10_244_liveinterface
+
   - name: Public
     displayData:
       sortBy: default
