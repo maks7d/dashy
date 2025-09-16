@@ -1,37 +1,37 @@
 {
-  "updated": "2025-06-10 22:45:01",
+  "updated": "2025-09-16 13:19:59",
   "clients": [
     {
-      "common_name": "pc-fixe-max",
-      "real_address": "91.170.192.164:43256",
-      "bytes_received": "25427582",
-      "bytes_sent": "247884547",
-      "connected_since": "2025-06-10 22:35:34",
+      "common_name": "pc-ubuntu-max",
+      "real_address": "2a01:e0a:833:1e20:380e:6eeb:2bc3:a9be",
+      "bytes_received": "263639",
+      "bytes_sent": "288362",
+      "connected_since": "2025-09-16 13:19:26",
       "virtual_addresses": [
         {
-          "address": "fd42:42:42:42::c",
-          "last_ref": "2025-06-10 22:44:40"
+          "address": "10.8.0.24",
+          "last_ref": "2025-09-16 13:19:58"
         },
         {
-          "address": "10.8.0.12",
-          "last_ref": "2025-06-10 22:45:00"
+          "address": "fd42:42:42:42::18",
+          "last_ref": "2025-09-16 13:19:48"
         }
       ]
     },
     {
-      "common_name": "max-server",
-      "real_address": "2a01:e0a:2b0:2920::294d:a0ca",
-      "bytes_received": "1088605858",
-      "bytes_sent": "1126629627",
-      "connected_since": "2025-06-08 14:57:29",
+      "common_name": "hugo-desktop-ubuntu",
+      "real_address": "2a02:842b:da:5601:f992:7484:df62:bb4",
+      "bytes_received": "5211492264",
+      "bytes_sent": "196335451321",
+      "connected_since": "2025-09-16 11:42:01",
       "virtual_addresses": [
         {
-          "address": "fd42:42:42:42::7",
-          "last_ref": "2025-06-10 22:23:16"
+          "address": "fd42:42:42:42::b",
+          "last_ref": "2025-09-16 13:19:58"
         },
         {
-          "address": "10.8.0.7",
-          "last_ref": "2025-06-10 22:44:58"
+          "address": "10.8.0.11",
+          "last_ref": "2025-09-16 13:19:58"
         }
       ]
     }

@@ -102,9 +102,9 @@ sections:
         id: 9_244_fileconverter
 
       - title: live interface
-        description: '8000'
+        description: '5000'
         icon: https://cdn-icons-png.flaticon.com/128/13629/13629260.png
-        url: http://10.8.0.7:8000
+        url: http://10.8.0.7:5000
         provider: Max server
         statusCheck: true
         id: 10_244_liveinterface
